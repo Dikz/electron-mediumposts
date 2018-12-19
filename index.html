@@ -6,9 +6,23 @@
     <title>Electron - Medium Posts</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <nav class="navbar fixed-top navbar-dark bg-dark" style="-webkit-app-region: drag;">
+      <a class="navbar-brand" href="#"><i class="fab fa-medium"></i> Electron - Medium Posts</a>
+      <div class="pull-right" style="-webkit-app-region: no-drag;">
+        <span class="control-icon">
+          <i class="control-icon fas fa-minus-circle fa-lg" id="min" style="color:#fff;"></i>
+        </span>
+        <span class="control-icon">
+          <i class="control-icon fas fa-expand fa-lg" id="max" style="color:#fff;"></i>
+        </span>
+        <span class="control-icon">
+          <i class="fas fa-times-circle fa-lg" id="close" style="color:#9F1717;"></i>
+        </span>
+      </div>
+    </nav>
 
     <script>
       window.$ = window.JQuery = require('jquery')
