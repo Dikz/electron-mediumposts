@@ -1,0 +1,8 @@
+.control-icon {
+    padding: 2px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.control-icon:hover {
+    mix-blend-mode: difference;
+}
