@@ -6,3 +6,7 @@
 .control-icon:hover {
     mix-blend-mode: difference;
 }
+
+.content {
+    margin-top: 100px;
+}
