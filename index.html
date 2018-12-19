@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Electron - Medium Posts</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   </head>
   <body>
     <h1>Hello World!</h1>
 
     <script>
+      window.$ = window.JQuery = require('jquery')
       require('./renderer.js')
+      require('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+      require('./node_modules/popper.js/dist/umd/popper.min.js')
     </script>
   </body>
 </html>
