@@ -1,6 +1,9 @@
 body {
     background: #f2f2f2;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 .control-icon {
     padding: 2px;
