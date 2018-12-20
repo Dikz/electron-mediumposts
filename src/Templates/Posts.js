@@ -15,10 +15,13 @@ exports.cardOne = data =>
                         : '1*JF156_wKDpEAJ4j8bH-M1w.png'
                     }">
                     <div class="card-img-overlay">
-                        <p class="badge badge-light" style="bottom:8px;position:absolute;left:30px;">${
+                        <p class="btn btn-dark text-light" style="position:absolute;left:6%;bottom:12%;">👏 ${
+                          post.virtuals.totalClapCount
+                        } Claps</p>
+                        <p class="badge badge-light" style="position:absolute;right:10%;bottom:22%;">${
                           post.virtuals.wordCount
                         } palavras</p>
-                        <p class="badge badge-light" style="bottom:8px;position:absolute;right:30px;">${moment
+                        <p class="badge badge-light" style="position:absolute;right:10%;bottom:12%;">${moment
                           .duration({ minutes: post.virtuals.readingTime })
                           .humanize()} de leitura</p>
                     </div>
