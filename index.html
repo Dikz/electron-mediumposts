@@ -26,14 +26,23 @@
 
     <div class="container content">
       <div class="row">
-        <!-- Search Medium User Form-->
-        <p class="col-12">Busque postagens de um user ou publication do medium.</p>
-        <form class="form-inline col-12">
-            <input type="text" class="form-control mb-2 mr-sm-2" name="user" placeholder="Ex: devupacademy">
-          <button type="submit" class="btn btn-primary mb-2">Buscar</button>
-        </form>
+        <div class="col-6">
+          
+          <div class="alert alert-light" role="alert">
+            <p class="font-weight-bold col-12">Busque postagens de um user ou publication do medium.</p>
+            <p class="font-italic">* Para buscar um usuário lembre de usar o <b>@</b> antes.</p>
+          </div>
+
+        </div>
+        <div class="col-6">
+          <!-- Search Medium User Form-->
+          <form class="form-inline col-12 mt-4" id="searchForm">
+              <input type="text" class="form-control mb-2 mr-sm-2" name="user" placeholder="Ex: devupacademy">
+            <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+          </form>
+        </div>
       </div>
-      <div class="row">
+      <div class="row mt-5" id="searchResults">
         
       </div>
     </div>
