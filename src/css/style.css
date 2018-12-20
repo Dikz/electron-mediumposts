@@ -15,5 +15,20 @@ body::-webkit-scrollbar {
 }
 
 .content {
-    margin-top: 100px;
+    margin-top: 66px;
+}
+
+#searchResults > div:hover {
+    box-shadow: -10px -10px 6px #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
+    border-right: 2px solid #e2e2e2;
+}
+
+#searchResults > div:hover .post-img {
+    opacity: 0.9;
+}
+
+.post-img {
+    max-height: 240px;
+    opacity: 0.4;
 }
