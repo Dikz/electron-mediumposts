@@ -11,6 +11,8 @@ exports.cardOne = data =>
                 <div class="col-sm-6 col-md-6">
                     <img class="card-img post-img" src="https://cdn-images-1.medium.com/max/800/${
                       post.virtuals.previewImage.imageId
+                        ? post.virtuals.previewImage.imageId
+                        : '1*JF156_wKDpEAJ4j8bH-M1w.png'
                     }">
                     <div class="card-img-overlay">
                         <p class="badge badge-light" style="bottom:8px;position:absolute;left:30px;">${
