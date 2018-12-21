@@ -22,7 +22,7 @@ exports.formHandleSearch = (formid, resultid) => {
           msgError = 'Algo errado na busca';
         }
         $(`#${resultid}`).append(`
-          <div class="alert alert-danger">${msgError}</div>
+          <div class="alert alert-danger offset-md-2 offset-sm-2">${msgError}</div>
         `);
       });
   });
