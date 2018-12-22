@@ -5,9 +5,9 @@ const { cardOne } = require('../Templates/Posts');
 exports.formHandleSearch = (formid, resultid) => {
   $(`#${formid}`).submit(function handle(e) {
     e.preventDefault();
-
-    const user = this.user.value;
     $(`#${resultid}`).empty();
+    $(`#${resultid}`).prepend('<div class="loader offset-md-5"></div>');
+    const user = this.user.value;
     mfeed(user)
       .then(data => {
         $(`#${resultid}`).append(cardOne(data));
@@ -24,6 +24,9 @@ exports.formHandleSearch = (formid, resultid) => {
         $(`#${resultid}`).append(`
           <div class="alert alert-danger offset-md-2 offset-sm-2">${msgError}</div>
         `);
+      })
+      .then(() => {
+        $('.loader').remove();
       });
   });
 };
