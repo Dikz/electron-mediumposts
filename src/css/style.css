@@ -1,4 +1,4 @@
-body {
+htm, body {
     background: #f2f2f2;
 }
 body::-webkit-scrollbar {
@@ -16,6 +16,8 @@ body::-webkit-scrollbar {
 
 .content {
     margin-top: 66px;
+    overflow-y: scroll;
+    height: 86vh;
 }
 
 #searchResults > div:hover {
@@ -31,4 +33,23 @@ body::-webkit-scrollbar {
 .post-img {
     max-height: 240px;
     opacity: 0.4;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #212529;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin .8s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
