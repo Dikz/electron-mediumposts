@@ -3,5 +3,5 @@ const SearchController = require('./src/Controllers/SearchController');
 
 $(document).ready(() => {
   NavbarController.basic();
-  SearchController.formHandleSearch('searchForm', 'searchResults');
+  SearchController.formHandleSearch('searchForm', 'searchResults'); // (idFormulario, idResultados)
 });
