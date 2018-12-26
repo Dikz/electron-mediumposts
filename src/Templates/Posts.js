@@ -18,6 +18,9 @@ exports.cardOne = data =>
                         <p class="btn btn-dark text-light" style="position:absolute;left:6%;bottom:12%;">👏 ${
                           post.virtuals.totalClapCount
                         } Claps</p>
+                        <p class="badge badge-dark" style="position:absolute;left:6%;bottom:2%;"> ${moment(
+                          post.firstPublishedAt
+                        ).format('L')}</p>
                         <p class="badge badge-light" style="position:absolute;right:10%;bottom:22%;">${
                           post.virtuals.wordCount
                         } palavras</p>
